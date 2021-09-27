@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#listadoDeProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ordenarProductos{
+    border: solid 2px black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    align-items: center;
+    background-color:darkgray;
+    
+}
+.ordenFooterTarjetas input{
+    width: 5rem;
+    font-size: 1rem;
+}
+.imagenProducto{
+    height: 10rem;
+    width: 8rem;
+    margin: 1rem 2rem;
+}
+.sizeBotonCarrito{
+    height: 2rem;
+    width: 2rem;
+}
+.ordenFooterTarjetas{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+}
+.modal{
+    width: 80vw;
+    height: 90vh;
+    top:50px;
+    left: 40px;
+    background-color: cornsilk;
+    display: none; 
+}
+
+.cuerpoModal{
+    position: relative;
+    overflow: auto;
+    
+}
