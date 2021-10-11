@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="carrito.css" />
-
+    
     <title>Document</title>
   </head>
   <body>
     <header>
       <div>
-        <label id="saludo" for="usuario">Ingrese Usuario: </label>
-        <input type="text" id="ingresoDeUsuario" name="usuario" value="" />
+        <label  id="saludo" for="usuario">Ingrese Usuario: </label>
+        <input  type="text" id="ingresoDeUsuario" name="usuario" value="" />
       </div>
-      <div>
-        <button type="button" id="cambiarUsuario"><img class="sizeBotonCarrito" title="cambiar usuario" src="./assets/cambiarUsuario.jpg" alt=""> </button>
-        <button type="button" id="mostrarCarrito" data-open="modalCarrito">
+      <div >
+        <button type="button" id="cambiarUsuario"><img class="sizeBotonCarrito" src="./assets/cambiarUsuario.jpg" alt=""> </button>
+        <button type="button" id="mostrarCarrito" data-open="modalCarrito" >
           <img
             class="sizeBotonCarrito"
             src="./assets/carrito.png"
@@ -28,11 +28,10 @@
       </div>
     </header>
 
-    <section>
+    <section >
       <h1>Tienda</h1>
       <div id="listadoDeProductos"></div>
     </section>
-
     <div class="modal" id="modalCarrito">
       <button id="cerrar" type="button">X</button>
       <div class="cuerpoModal" id="contenidoModal">
@@ -45,8 +44,9 @@
         <button type="button" id="eliminar">Borrar</button>
       </div>
     </div>
-    <script src="./jscarrito/constructores.js"></script>
-    <script src="./jscarrito/funcionesCarrito.js"></script>
+    <script src="./jscarrito/jquery.min.js"></script>
+    <script src="./jscarrito/usuarioProductos.js"></script>
+    <script src="./jscarrito/modalCarrito.js"></script>
     <script src="carrito.js"></script>
   </body>
 </html>

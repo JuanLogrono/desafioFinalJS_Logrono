@@ -3,6 +3,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.tutoUsuario{
+    width: 40%;
+}
 #listadoDeProductos{
     display: flex;
     flex-direction: row;
@@ -46,10 +50,27 @@ justify-content: space-around;
     left: 40px;
     background-color: cornsilk;
     display: none; 
+    position: fixed;
 }
 
 .cuerpoModal{
     position: relative;
     overflow: auto;
     
+}
+footer{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15rem;
+}
+
+a{
+    margin-left: 6px;
+    height: max-content;
+    font-size: large;
+    background-color: rgb(180, 175, 175);
+    color: rgb(170, 60, 60);
+    text-decoration: none;
+    border: solid 1px black;
 }
