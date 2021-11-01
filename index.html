@@ -6,47 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="carrito.css" />
     
-    <title>Document</title>
+    <title>Compras</title>
   </head>
   <body>
-    <header>
+    <nav>
+      <h1>Feria Virtual</h1>
+      <Span><H3 id="hola"></H3></Span>
       <div>
-        <label  id="saludo" for="usuario">Ingrese Usuario: </label>
-        <input  type="text" id="ingresoDeUsuario" name="usuario" value="" />
+        <label class="generoFondo" for="navegador">Por Genero </label>
+          <select name="navegador" id="opciones">
+            <option selected="selected" value="todos" >todos</option>;
+            <option value="hombre" >hombre</option>;
+            <option value="accesorio">accesorio</option>;
+            <option value="mujer">mujer</option>;
+          </select>
+        <input type="text" placeholder="Buscar" id="buscador">
       </div>
-      <div >
-        <button type="button" id="cambiarUsuario"><img class="sizeBotonCarrito" src="./assets/cambiarUsuario.jpg" alt=""> </button>
-        <button type="button" id="mostrarCarrito" data-open="modalCarrito" >
-          <img
-            class="sizeBotonCarrito"
-            src="./assets/carrito.png"
-            alt="Carrito"
-            title="Ver compras"
-          />
-        </button>
-        <button type="button" id="borrarAlmacenado"><img class="sizeBotonCarrito" title="Eliminar Pedido almacenado" src="./assets/basura.jpg" alt="Eliminar Almacenado"></button>
+      <div>
+        <a href="#" id="cambiarUsuario" ><img class="sizeBotonCarrito" src="./assets/cambiarUsuario.jpg" alt=""> </a>
+        <a href="#" id="mostrarCarrito" data-open="modalCarrito"  >
+          <img class="sizeBotonCarrito" src="./assets/carrito.png" alt="Carrito" title="Ver compras"/></a>
+        <a href="#" id="borrarAlmacenado" ><img class="sizeBotonCarrito" title="Eliminar Pedido almacenado" src="./assets/basura.jpg" alt="Eliminar Almacenado"></a>
       </div>
+    </nav>
+    <header>
     </header>
-
+    <section id="bienvenida">
+    <div class="contenedorSaludo">
+      <h2><b>Hola !!! Nos gustaria saber tu nombre</b></h2>
+      <label  id="saludo" for="usuario">Nombre de Usuario: 
+        <input  type="text" id="ingresoDeUsuario" name="usuario" value="" />
+        <button type="submit" id="botonSaludo">Enviar</button>
+        <div id="sinUsuario"></div>
+      </label>
+    </div> 
+    </section>
     <section >
-      <h1>Tienda</h1>
+      <a href="#" id="palabraFiltro"></a>
+      <a href="#" class="paginas , prev , nroPagina" rel="prev" ><</a><span class="contPag"></span><a href="#" class= "paginas , next , nroPagina" rel="next">></a>
       <div id="listadoDeProductos"></div>
+      <a href="#" class="paginas , prev , nroPagina" rel= "prev"><</a><span class="contPag"></span><a href="#" class= "paginas , next , nroPagina" rel="next">></a>
     </section>
     <div class="modal" id="modalCarrito">
-      <button id="cerrar" type="button">X</button>
+      <a id="cerrar" href="#">X</a>
       <div class="cuerpoModal" id="contenidoModal">
         <h2>Compras Realizadas</h2>
         <ul id="listaComprados"></ul>
       </div>
       <div>
         <button type="button" id="confirmar">Confirmar Compra</button>
+        <button type="button" id="guardarCompra">Guardar compra</button>
         <button type="button" id="recuperarCompra">Recuperar Compra</button>
         <button type="button" id="eliminar">Borrar</button>
       </div>
     </div>
-    <script src="./jscarrito/jquery.min.js"></script>
-    <script src="./jscarrito/usuarioProductos.js"></script>
-    <script src="./jscarrito/modalCarrito.js"></script>
-    <script src="carrito.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
   </body>
 </html>

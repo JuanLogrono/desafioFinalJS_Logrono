@@ -1,76 +1,177 @@
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 20rem;
+  width: 100%;
+  background-image: url(./assets/banner.jpg);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+h1 {
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-style: oblique;
+  color: gray;
 }
 
-.tutoUsuario{
-    width: 40%;
+section {
+  text-align: center;
 }
-#listadoDeProductos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#bienvenida {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 500;
+  top: 0;
 }
-
-.ordenarProductos{
-    border: solid 2px black;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 12rem;
-    align-items: center;
-    background-color:darkgray;
-    
+.contenedorSaludo {
+  background-image: url(./assets/saludo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  text-align: center;
+  text-justify: distribute;
+  top: 5px;
+  left: 23rem;
+  height: 20rem;
+  width: 40rem;
 }
-.ordenFooterTarjetas input{
-    width: 5rem;
-    font-size: 1rem;
+h2 {
+  margin-top: 4rem;
 }
-.imagenProducto{
-    height: 10rem;
-    width: 8rem;
-    margin: 1rem 2rem;
+#hola {
+  background-color: lightgrey;
 }
-.sizeBotonCarrito{
-    height: 2rem;
-    width: 2rem;
+#sinUsuario {
+  display: none;
 }
-.ordenFooterTarjetas{
-    width: 100%;
-    height: 2.5rem;
-    display: flex;
-    flex-direction: row;
-justify-content: space-around;
+.generoFondo {
+  background-color: rgb(243, 241, 241);
 }
-.modal{
-    width: 80vw;
-    height: 90vh;
-    top:50px;
-    left: 40px;
-    background-color: cornsilk;
-    display: none; 
-    position: fixed;
+#opciones {
+  border: grey solid 0.5px;
+  border-radius: 8%;
+  width: 6rem;
+  height: 1.5rem;
+  margin-right: 2rem;
 }
-
-.cuerpoModal{
-    position: relative;
-    overflow: auto;
-    
-}
-footer{display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 15rem;
+#listadoDeProductos {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-a{
-    margin-left: 6px;
-    height: max-content;
-    font-size: large;
-    background-color: rgb(180, 175, 175);
-    color: rgb(170, 60, 60);
+.ordenarProductos {
+  border: solid 2px black;
+  margin: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  align-items: center;
+  background-color: darkgray;
+}
+.ordenFooterTarjetas input {
+  width: 5rem;
+  font-size: 1rem;
+}
+.imagenProducto {
+  height: 12rem;
+  width: 11rem;
+  margin: 1rem 2rem;
+}
+.sizeBotonCarrito {
+  height: 2rem;
+  width: 2rem;
+}
+.ordenFooterTarjetas {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.modal {
+  align-self: center;
+  width: 60vw;
+  height: 90vh;
+  overflow-y: scroll;
+  top: 50px;
+  background: radial-gradient(
+    rgb(221, 220, 220),
+    rgb(190, 189, 189),
+    rgb(102, 102, 102)
+  );
+  display: none;
+  position: fixed;
+  text-align: center;
+  align-self: center;
+}
+.imagenModal {
+  width: 3rem;
+  height: 3.5rem;
+}
+.cuerpoModal {
+  position: relative;
+  overflow: auto;
+}
+#listaComprados {
+  list-style: none;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+.eliminarArt {
+  font-size: 1.4rem;
+  color: rgba(150, 8, 8, 0.568);
+  margin: 0 0.5rem;
+}
+.borrarPedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#borrarSuma {
+  margin-left: 38rem;
+  font-size: 1.4rem;
+}
+#cerrar {
+  margin-top: 2rem;
+  margin-left: 45rem;
+  font-size: 1.5rem;
+  color: black;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15rem;
+}
+
+a {
+  margin-left: 6px;
+  height: max-content;
+  font-size: large;
+  text-decoration: none;
+}
+
+#palabraFiltro{
+    display: none;
     text-decoration: none;
-    border: solid 1px black;
+    margin-right: 50rem;
+    margin-left: 4px;
+}
+#palabraFiltro b{
+    color: rgba(150, 8, 8, 0.568);
 }
